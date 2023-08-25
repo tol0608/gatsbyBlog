@@ -3,10 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `오늘도 앞으로`,
+    description: `미래를 위해 지금 생각하고, 기록하자`,
+    author: `Jae Hyeon`,
+    siteUrl: `https://tol0608.github.io/gatsbyBlog`,
   },
   plugins: [
     {
@@ -19,5 +19,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
   ],
 }
