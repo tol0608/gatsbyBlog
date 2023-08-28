@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://tol0608.github.io/sitemap-index.xml
+Host: https://tol0608.github.io
