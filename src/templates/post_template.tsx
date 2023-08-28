@@ -4,6 +4,7 @@ import { PostFrontmatterType } from 'types/PostItem.types' // 바로 아래에�
 import Template from 'components/Common/Template'
 import PostHead from 'components/Post/PostHead'
 import PostContent from 'components/Post/PostContent'
+import CommentWidget from 'components/Post/CommentWidget'
 
 type PostTemplateProps = {
   data: {
@@ -30,7 +31,6 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
       html,
       frontmatter: {
         title,
-        summary,
         date,
         categories,
         thumbnail: {
@@ -49,6 +49,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
         thumbnail={gatsbyImageData}
       />
       <PostContent html={html} />
+      <CommentWidget />
     </Template>
   )
 }
