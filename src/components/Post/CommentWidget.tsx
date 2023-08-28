@@ -1,7 +1,7 @@
 import React, { createRef, FunctionComponent, useEffect } from 'react'
 
 const src = 'https://utteranc.es/client.js'
-const repo = 'tol0608/gatsbyBlog.github.io'
+const repo = 'tol0608/gatsbyBlog'
 
 type UtterancesAttributesType = {
   src: string
