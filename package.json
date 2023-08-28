@@ -10,10 +10,14 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/react-helmet": "^6.1.6",
     "gatsby": "^5.11.0",
+    "gatsby-plugin-canonical-urls": "^5.12.0",
     "gatsby-plugin-emotion": "^8.12.0",
     "gatsby-plugin-image": "^3.12.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sharp": "^5.12.0",
+    "gatsby-plugin-sitemap": "^6.12.0",
     "gatsby-plugin-typescript": "^5.12.0",
     "gatsby-remark-copy-linked-files": "^6.12.0",
     "gatsby-remark-external-links": "^0.0.4",
@@ -26,7 +30,8 @@
     "prismjs": "^1.29.0",
     "query-string": "^8.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.4.1",
@@ -35,6 +40,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.2",
+    "gh-pages": "^6.0.0",
     "prettier": "^3.0.2",
     "typescript": "^5.1.6"
   },
@@ -49,13 +55,14 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b deploy"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tol0608/gatsbyBlog"
+    "url": "https://tol0608.github.io"
   },
   "bugs": {
-    "url": "https://github.com/tol0608/gatsbyBlog/issues"
+    "url": "https://tol0608.github.io/issues"
   }
 }

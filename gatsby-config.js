@@ -6,9 +6,23 @@ module.exports = {
     title: `오늘도 앞으로`,
     description: `미래를 위해 지금 생각하고, 기록하자`,
     author: `Jae Hyeon`,
-    siteUrl: `https://tol0608.github.io/gatsbyBlog`,
+    siteUrl: `https://tol0608.github.io`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://tol0608.github.io',
+        stripQueryString: true,
+      },
+    },
     {
       resolve: 'gatsby-plugin-typescript',
       options: {
