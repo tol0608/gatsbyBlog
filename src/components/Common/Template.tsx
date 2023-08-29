@@ -30,6 +30,15 @@ const Template: FunctionComponent<TemplateProps> = function ({
       <Helmet>
         <title>{title}</title>
 
+        <meta
+          name="google-site-verification"
+          content="QofucJpegXJ3d0nCtNg59LCCzfT4ZMx5PnG1Wk1ojyc"
+        />
+        <meta
+          name="naver-site-verification"
+          content="e0465db6d2e9c5165fa764004e83fa1cc06e56f8"
+        />
+
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
@@ -47,15 +56,6 @@ const Template: FunctionComponent<TemplateProps> = function ({
         <meta name="twitter:image" content={image} />
         <meta name="twitter:site" content="@jaehyeon" />
         <meta name="twitter:creator" content="@jaehyeon" />
-
-        <meta
-          name="google-site-verification"
-          content="QofucJpegXJ3d0nCtNg59LCCzfT4ZMx5PnG1Wk1ojyc"
-        />
-        <meta
-          name="naver-site-verification"
-          content="e0465db6d2e9c5165fa764004e83fa1cc06e56f8"
-        />
 
         <html lang="ko" />
       </Helmet>
