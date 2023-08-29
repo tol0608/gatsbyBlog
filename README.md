@@ -1,27 +1,19 @@
-
-
 <p align="center">
   <a href="https://github.com/tol0608">
-    <img alt="Gatsby" src="https://tol0608.github.io/static/bc54ecc8078bc9c6d87d5db996d308ee/ec77b/ljh_photo.avif" width="100" />
+    <img alt="jaehyeon" src="static/ljh.jpeg" />
   </a>
 </p>
 <h1 align="center">
   오늘도 앞으로
 </h1>
 
-## 안녕하세요. 항상 생각하고 실천하는 취업준비생 이재현입니다.
+### 안녕하세요. 세상과 함께하는 프론트앤드 개발자 지망생 이재현입니다.
 
 <br/>
 
-### 저는 이런 준비중입니다. 🧑‍💻
+### 저는 여러분과 함께하기위해 준비중입니다. 🧑‍💻
 
 - 🆕 프론트엔드 개발자 준비중 💻
-
-
-- 웹퍼블리셔 💻
-
-
-- 디자이너 🎨
 
 
 - 공감하는 사람 👨‍👩‍👦
@@ -33,13 +25,13 @@
 - 7일중 6커밋하는 사람 📚
 
 
-- 현재는 퍼블리셔지만 앞으로 full-stack 개발자가 되기위해 노력할게요 🔥
+- 앞으로 함께하고싶은 프론트앤드 개발자가 되기위해 노력할게요 🔥
 
 <br/>  
 
-## My Skill Set
+## 이런 기술들이 준비되어있어요 :)
 
-<table><tr><td valign="top" width="60%">
+<table><tr><td valign="top" width="100%">
 
 ### develop
 
@@ -48,24 +40,14 @@
 <a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="75" /></a>  
 <a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="75" /></a>   
 <a href="https://github.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="75" /></a>  
-<a href="https://reactjs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="75" /></a>  
+<a href="https://reactjs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="75" /></a>
+<a href="https://www.figma.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/figma-icon.svg" alt="Figma" height="75" /></a> 
 </div>
-
-</td><td valign="top" width="40%">
-
-### Design
-
-<div align="center">  
-<a href="https://www.adobe.com/in/products/photoshop.html" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/photoshop-plain.svg" alt="Photoshop" height="75" /></a>  
-<a href="https://www.adobe.com/in/products/illustrator.html" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/adobe_illustrator-icon.svg" alt="Illustrator" height="75" /></a>  
-<a href="https://www.figma.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/figma-icon.svg" alt="Figma" height="75" /></a>  
-
-</div>
-
-</td></tr></table>
+</td>
+</tr></table>
 <br />
 
-## Connect with me
+## 제가 궁금하다면?
 
 <div align="center">
 <a href="https://github.com/tol0608" target="_blank">
@@ -76,7 +58,6 @@
 </a>  
 </div>  
 
-
 ## 🧐 파일구조
 
     .
@@ -84,6 +65,7 @@
     │   ├── components
     │   ├── pages
     │   ├── hooks
+    │   ├── templates
     │   └── utils
     ├── .eslintignore
     ├── .eslintrc.json
@@ -102,10 +84,11 @@
 
 1. src: 이 디렉토리에는 웹 애플리케이션의 소스 코드가 들어 있습니다. 주요 하위 디렉토리로 다음이 있습니다.
 
-   - components: 재사용 가능한 리액트 컴포넌트들을 포함합니다.
-   - pages: 웹 사이트의 각 페이지에 대한 리액트 컴포넌트들을 포함합니다.
-   - hooks: 커스텀 React 훅들을 저장하는 곳입니다.
-   - utils: 유틸리티 함수와 도우미 모듈을 보관합니다.
+    - components: 재사용 가능한 리액트 컴포넌트들을 포함합니다.
+    - pages: 웹 사이트의 각 페이지에 대한 리액트 컴포넌트들을 포함합니다.
+    - hooks: 커스텀 React 훅들을 저장하는 곳입니다.
+    - utils: 유틸리티 함수와 도우미 모듈을 보관합니다.
+    - templates: 블로그 포스트 템플릿 컴포넌트를 포함합니다.
 
 2. .eslintignore: ESLint에서 무시할 파일 및 디렉토리 목록을 지정하는 파일입니다.
 
