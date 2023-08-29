@@ -37,10 +37,13 @@ const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
   <Link {...props} />
 ))<CategoryItemProps>`
   margin-right: 20px;
-  padding: 5px 0;
+  padding: 5px 10px;
   font-size: 18px;
-  font-weight: ${({ active }) => (active ? '800' : '400')};
+  background-color: ${({ active }) => (active ? '#29323c' : 'transparent')};
+  color: ${({ active }) => (active ? '#ffffff' : 'inherit')};
+  border-radius: 5px;
   cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
 
   &:last-of-type {
     margin-right: 0;
