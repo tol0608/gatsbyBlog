@@ -12,6 +12,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
+        host:'https://tol0608.github.io/',
+        sitemap: 'https://tol0608.github.io/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
