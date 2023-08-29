@@ -1,0 +1,301 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.12.1"/><style data-href="/styles.9e907bc32054b7771552.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"/><link rel="canonical" href="https://tol0608.github.io/javascript/javascript230710/" data-baseprotocol="https:" data-basehost="tol0608.github.io"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion="css 13ku56z">.css-13ku56z{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;}</style><main class="css-13ku56z ea16kfu0"><style data-emotion="css-global v8gaqm">@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gasoek+One&family=Lilita+One&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');*{padding:0;margin:0;box-sizing:border-box;font-family:'Noto Sans KR',serif;}html,body,#___gatsby{height:100%;}a{color:inherit;}a,a:hover{-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}</style><style data-emotion="css 16cz9yp">.css-16cz9yp{position:relative;width:100%;height:400px;}@media (max-width: 768px){.css-16cz9yp{height:300px;}}</style><div class="css-16cz9yp e1j9oofz1"><style data-emotion="css 1bjn9yo">.css-1bjn9yo{z-index:-1;width:100%;height:400px;object-fit:cover;-webkit-filter:brightness(0.25);filter:brightness(0.25);}@media (max-width: 768px){.css-1bjn9yo{height:300px;}}</style><div data-gatsby-image-wrapper="" style="position:absolute" class="gatsby-image-wrapper gatsby-image-wrapper-constrained css-1bjn9yo e1j9oofz0"><div style="max-width:1800px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg%20height=&#x27;1012&#x27;%20width=&#x27;1800&#x27;%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%20version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div><img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqElEQVR42mP4cCsAF3p/M+D7g8D/z4M+3Ql8dwPMfhH8/3nwtweBQCmgAgZcOoGqfzwM3LfOvbPe7sEZ31+Pg45u8awttW2utD23x+vrPZB+nJrfXPf//zK4o85OQkr7xlGfi/u8jY0NjIwMNDT17GwMgcZ9vhuIU/NboOYXwf2t9qrquo/P+c3odZRX0rm43+v+ad9NS1wJOBuiua/FXllV995p363LXOUVddMTLYFu/vciGGgtTmcDJV5dBWtutldT17t80PvLvcDaUhsVVT0lFd2CLKtnF/0/38Gh+cvdwG/3QWHb32KvpqF3ab830P+/nwWd3O5ZkGklK6/TVW//+3EQFs2f7gTcPem7fYXb/1fB3Y32qmp6wAA7sN59yTTn/2+CP9wJsLIwTIq1AAY4A2YMAWOls85OWlYHqMLQ0MDD1QQonp9hJS6lHRdhHhFiJiuvO6XD4RemzUDfAj3z6Jxfc5VdgK9parzFie2ePx8FPr/k19fiEBJgBkST2h3e3vD/eBubn4H6gX4GegnIAPocmLDegUwM/PM0CKgBiH4/ATGAKgGt9I0EqfqhYQAAAABJRU5ErkJggg==" alt=""/><picture><source type="image/webp" data-srcset="/static/e9a85b5a3a7f83d86a85a4c348938bd5/06689/javascript.webp 450w,/static/e9a85b5a3a7f83d86a85a4c348938bd5/eca74/javascript.webp 900w,/static/e9a85b5a3a7f83d86a85a4c348938bd5/23de5/javascript.webp 1800w" sizes="(min-width: 1800px) 1800px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 1800px) 1800px, 100vw" decoding="async" loading="lazy" data-src="/static/e9a85b5a3a7f83d86a85a4c348938bd5/ddad7/javascript.png" data-srcset="/static/e9a85b5a3a7f83d86a85a4c348938bd5/602a4/javascript.png 450w,/static/e9a85b5a3a7f83d86a85a4c348938bd5/4c0f7/javascript.png 900w,/static/e9a85b5a3a7f83d86a85a4c348938bd5/ddad7/javascript.png 1800w" alt="thumbnail"/></picture><noscript><picture><source type="image/webp" srcSet="/static/e9a85b5a3a7f83d86a85a4c348938bd5/06689/javascript.webp 450w,/static/e9a85b5a3a7f83d86a85a4c348938bd5/eca74/javascript.webp 900w,/static/e9a85b5a3a7f83d86a85a4c348938bd5/23de5/javascript.webp 1800w" sizes="(min-width: 1800px) 1800px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 1800px) 1800px, 100vw" decoding="async" loading="lazy" src="/static/e9a85b5a3a7f83d86a85a4c348938bd5/ddad7/javascript.png" srcSet="/static/e9a85b5a3a7f83d86a85a4c348938bd5/602a4/javascript.png 450w,/static/e9a85b5a3a7f83d86a85a4c348938bd5/4c0f7/javascript.png 900w,/static/e9a85b5a3a7f83d86a85a4c348938bd5/ddad7/javascript.png 1800w" alt="thumbnail"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><style data-emotion="css m1156n">.css-m1156n{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:768px;height:100%;margin:0 auto;padding:60px 0;color:#ffffff;}@media (max-width: 768px){.css-m1156n{width:100%;padding:40px 20px;}}</style><div class="css-m1156n e1yerb173"><style data-emotion="css gywgo7">.css-gywgo7{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#ffffff;color:#000000;font-size:22px;cursor:pointer;box-shadow:0 0 10px rgba(0, 0, 0, 0.3);}@media (max-width: 768px){.css-gywgo7{width:30px;height:30px;font-size:18px;}}</style><div class="css-gywgo7 e1yerb172"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="svg-inline--fa fa-arrow-left " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg></div><style data-emotion="css igz9y9">.css-igz9y9{display:-webkit-box;overflow:hidden;overflow-wrap:break-word;margin-top:auto;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-family:'Do Hyeon',sans-serif;font-size:45px;font-weight:800;}@media (max-width: 768px){.css-igz9y9{font-size:30px;}}</style><div class="css-igz9y9 e1yerb171">자바스크립트와 객체</div><style data-emotion="css 3gcnt2">.css-3gcnt2{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:10px;font-size:18px;font-weight:700;}@media (max-width: 768px){.css-3gcnt2{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;font-size:15px;font-weight:400;}}</style><div class="css-3gcnt2 e1yerb170"><div>웹개발 / 프로그래밍 기초 / JAVASCRIPT</div><div>2023.07.10.</div></div></div></div><style data-emotion="css uo146q">.css-uo146q{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:768px;margin:0 auto;padding:100px 0;word-break:break-all;line-height:1.8;font-size:16px;font-weight:400;}.css-uo146q p{padding:3px 0;}.css-uo146q h1,.css-uo146q h2,.css-uo146q h3{font-weight:800;margin-bottom:30px;}.css-uo146q *+h1,.css-uo146q *+h2,.css-uo146q *+h3{margin-top:80px;}.css-uo146q hr+h1,.css-uo146q hr+h2,.css-uo146q hr+h3{margin-top:0;}.css-uo146q h1{font-size:30px;}.css-uo146q h2{font-size:25px;}.css-uo146q h3{font-size:20px;}.css-uo146q blockquote{margin:30px 0;padding:5px 15px;border-left:2px solid #000000;font-weight:800;}.css-uo146q ol,.css-uo146q ul{margin-left:20px;padding:30px 0;}.css-uo146q hr{border:1px solid #000000;margin:100px 0;}.css-uo146q a{color:#4263eb;-webkit-text-decoration:underline;text-decoration:underline;}.css-uo146q pre[class*='language-']{margin:30px 0;padding:15px;font-size:15px;}.css-uo146q pre[class*='language-']::-webkit-scrollbar-thumb{background:rgba(255, 255, 255, 0.5);border-radius:3px;}.css-uo146q code[class*='language-'],.css-uo146q pre[class*='language-']{tab-size:2;}@media (max-width: 768px){.css-uo146q{width:100%;padding:80px 20px;line-height:1.6;font-size:14px;}.css-uo146q h1{font-size:23px;}.css-uo146q h2{font-size:20px;}.css-uo146q h3{font-size:17px;}.css-uo146q img{width:100%;}.css-uo146q hr{margin:50px 0;}}</style><div class="css-uo146q e1jq60xz0"><h2>자바스크립트의 내장 객체</h2>
+<ul>
+<li>프로그래밍 언어로써의 기능을 제공하기 위한 내장 객체 → 생성자 함수로 제공
+⇒ Boolean, String, Number, Math, Array 등 (첫 문자가 대문자)</li>
+<li>웹을 지원하기 위한 내장 객체(BOM : Browser Object Model) → 객체 자체로서 제공
+⇒ <strong>window</strong>, (document, navigator, history, location, screen) ⇒ window 객체 안에 속해있는 속성들 (window. 을 생략가능함)</li>
+</ul>
+<h3>객체의 인스턴스 만들기</h3>
+<p>객체의 인스턴스를 만드는 방법은 해당 객체의 생성자 함수를 호출하는 것입니다.
+예를 들어, <code class="language-text">Number</code> 객체의 인스턴스를 만들기 위해 <code class="language-text">new Number()</code>를 호출합니다. 이때, 생성자 함수에 인수를 전달하여 객체를 초기화할 수 있습니다. 예를 들어, <code class="language-text">new Number(3)</code>을 호출하면, 값이 3인 <code class="language-text">Number</code> 객체의 인스턴스가 만들어집니다.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">var</span> number <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Number 인스턴스 만들고 변수에 저장하기</span></code></pre></div>
+<p>임시 객체 (= 승격, 객체 프로모션)</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx">    <span class="token keyword">var</span> str1 <span class="token operator">=</span> <span class="token string">'Hello'</span><span class="token punctuation">;</span>     <span class="token comment">// str1는 객체가 아닙니다.</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str1<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+       
+    <span class="token comment">// str1은 기본자료형이지만 Number, Boolean, String 에 </span>
+    <span class="token comment">// .을 찍으면 자동으로 임시 객체로 변환</span></code></pre></div>
+<h2>Array 객체</h2>
+<table>
+<thead>
+<tr>
+<th>메서드 이름</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>concat()</td>
+<td>두 개 이상의 배열을 병합하여 새 배열을 만듭니다.</td>
+</tr>
+<tr>
+<td>every()</td>
+<td>배열의 모든 요소가 주어진 함수로 true를 반환하는지 테스트합니다.</td>
+</tr>
+<tr>
+<td>filter()</td>
+<td>주어진 함수로 필터링된 배열의 모든 요소를 모아 새 배열을 만듭니다.</td>
+</tr>
+<tr>
+<td>forEach()</td>
+<td>배열의 각 요소에 대해 주어진 함수를 실행합니다.</td>
+</tr>
+<tr>
+<td>indexOf()</td>
+<td>지정된 값과 일치하는 배열의 첫 번째 요소의 인덱스를 반환합니다.</td>
+</tr>
+<tr>
+<td>join()</td>
+<td>배열의 모든 요소를 문자열로 결합합니다.</td>
+</tr>
+<tr>
+<td>lastIndexOf()</td>
+<td>배열에서 지정된 요소를 찾아 마지막 인덱스를 반환합니다.</td>
+</tr>
+<tr>
+<td>map()</td>
+<td>배열의 모든 요소에 대해 주어진 함수를 호출한 결과를 모아 새 배열을 만듭니다.</td>
+</tr>
+<tr>
+<td>pop()</td>
+<td>배열에서 마지막 요소를 제거하고 해당 요소를 반환합니다.</td>
+</tr>
+<tr>
+<td>push()</td>
+<td>배열의 끝에 하나 이상의 요소를 추가하고 새 길이를 반환합니다.</td>
+</tr>
+<tr>
+<td>reduce()</td>
+<td>배열의 모든 요소에 대해 주어진 리듀서 함수를 실행하고 하나의 결과값을 반환합니다.</td>
+</tr>
+<tr>
+<td>reverse()</td>
+<td>배열의 순서를 반전합니다.</td>
+</tr>
+<tr>
+<td>shift()</td>
+<td>배열에서 첫 번째 요소를 제거하고 해당 요소를 반환합니다.</td>
+</tr>
+<tr>
+<td>slice()</td>
+<td>배열의 일부분에 대한 얕은 복사본을 새 배열 객체로 반환합니다.</td>
+</tr>
+<tr>
+<td>some()</td>
+<td>배열의 일부 요소가 주어진 함수를 true를 반환하는지 테스트합니다.</td>
+</tr>
+<tr>
+<td>sort()</td>
+<td>배열의 정렬된 값을 문자열로 만들어서 크기를 비교하고 정렬합니다.</td>
+</tr>
+<tr>
+<td>함수를 넣으면 지정한 조건에 따라 정렬합니다.</td>
+<td></td>
+</tr>
+<tr>
+<td>splice()</td>
+<td>배열에서 요소를 추가하거나 제거합니다.</td>
+</tr>
+<tr>
+<td>toString()</td>
+<td>배열을 문자열로 반환합니다.</td>
+</tr>
+<tr>
+<td>unshift()</td>
+<td>배열의 시작 부분에 하나 이상의 요소를 추가하고 새 길이를 반환합니다.</td>
+</tr>
+</tbody>
+</table>
+<aside>
+🌐 배열의 값을 변경할때는 원본값을 항상 두고 복제를 해서 변경을 하는 습관을 가지는것이 좋습니다.
+</aside>
+<h2>ForEach</h2>
+<p><code class="language-text">forEach()</code>는 배열의 각 요소에 대해 지정된 함수를 실행하는 메서드입니다. 이 메서드는 일반적으로 반복문을 대체하여 배열 요소에 대한 작업을 수행하는데 사용됩니다. <code class="language-text">forEach()</code> 메서드는 콜백 함수를 인수로 받습니다. 이 콜백 함수는 배열의 각 요소에 대해 실행됩니다. 콜백 함수는 일반적으로 세 가지 인수를 받습니다. 첫 번째 인수는 현재 처리 중인 요소의 값입니다. 두 번째 인수는 현재 처리 중인 요소의 인덱스입니다. 세 번째 인수는 <code class="language-text">forEach()</code> 메서드가 호출된 배열 자체입니다.</p>
+<p>예를 들어, 다음과 같이 <code class="language-text">forEach()</code> 메서드를 사용하여 배열의 요소를 출력할 수 있습니다.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">var</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+numbers<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">number</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>위 코드는 <code class="language-text">numbers</code> 배열의 요소를 반복하면서 각 요소를 콘솔에 출력합니다.</p>
+<h2>Date 객체</h2>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getDate()</td>
+<td>현재 월의 날짜를 반환합니다.</td>
+</tr>
+<tr>
+<td>getDay()</td>
+<td>현재 요일을 반환합니다.</td>
+</tr>
+<tr>
+<td>getFullYear()</td>
+<td>현재 연도를 반환합니다.</td>
+</tr>
+<tr>
+<td>getHours()</td>
+<td>현재 시간을 시간단위로 반환합니다.</td>
+</tr>
+<tr>
+<td>getMilliseconds()</td>
+<td>현재 시간의 밀리초를 반환합니다.</td>
+</tr>
+<tr>
+<td>getMinutes()</td>
+<td>현재 시간의 분을 반환합니다.</td>
+</tr>
+<tr>
+<td>getMonth()</td>
+<td>현재 월을 반환합니다.</td>
+</tr>
+<tr>
+<td>getSeconds()</td>
+<td>현재 시간의 초를 반환합니다.</td>
+</tr>
+<tr>
+<td>getTime()</td>
+<td>1970년 1월 1일 이후 경과한 밀리초 수를 반환합니다. (유닉스 타임)</td>
+</tr>
+<tr>
+<td>getTimezoneOffset()</td>
+<td>현재 시간대와 UTC와의 차이(분)를 반환합니다.</td>
+</tr>
+<tr>
+<td>setDate()</td>
+<td>현재 월의 날짜를 설정합니다.</td>
+</tr>
+<tr>
+<td>setFullYear()</td>
+<td>현재 연도를 설정합니다.</td>
+</tr>
+<tr>
+<td>setHours()</td>
+<td>현재 시간을 시간단위로 설정합니다.</td>
+</tr>
+<tr>
+<td>setMilliseconds()</td>
+<td>현재 시간의 밀리초를 설정합니다.</td>
+</tr>
+<tr>
+<td>setMinutes()</td>
+<td>현재 시간의 분을 설정합니다.</td>
+</tr>
+<tr>
+<td>setMonth()</td>
+<td>현재 월을 설정합니다.</td>
+</tr>
+<tr>
+<td>setSeconds()</td>
+<td>현재 시간의 초를 설정합니다.</td>
+</tr>
+<tr>
+<td>setTime()</td>
+<td>1970년 1월 1일 이후 경과한 밀리초 수를 설정합니다.</td>
+</tr>
+</tbody>
+</table>
+<h2>window 객체</h2>
+<table>
+<thead>
+<tr>
+<th>속성/메서드</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alert()</td>
+<td>경고 대화 상자를 표시합니다.</td>
+</tr>
+<tr>
+<td>blur()</td>
+<td>현재 창의 포커스를 해제합니다.</td>
+</tr>
+<tr>
+<td>clearInterval()</td>
+<td>주기적으로 실행되는 함수를 멈춥니다.</td>
+</tr>
+<tr>
+<td>clearTimeout()</td>
+<td>지연 실행 함수를 취소합니다.</td>
+</tr>
+<tr>
+<td>close()</td>
+<td>현재 창을 닫습니다.</td>
+</tr>
+<tr>
+<td>confirm()</td>
+<td>확인/취소 대화 상자를 표시합니다.</td>
+</tr>
+<tr>
+<td>document</td>
+<td>현재 페이지의 문서 객체에 접근합니다.</td>
+</tr>
+<tr>
+<td>focus()</td>
+<td>현재 창에 포커스를 설정합니다.</td>
+</tr>
+<tr>
+<td>navigator</td>
+<td>현재 브라우저의 정보에 접근합니다.</td>
+</tr>
+<tr>
+<td>open()</td>
+<td>새 창을 엽니다.</td>
+</tr>
+<tr>
+<td>prompt()</td>
+<td>텍스트 입력 대화 상자를 표시하고 입력한 값을 반환합니다.</td>
+</tr>
+<tr>
+<td>setInterval()</td>
+<td>지정된 시간마다 함수를 실행합니다.</td>
+</tr>
+<tr>
+<td>setTimeout()</td>
+<td>지정된 시간 뒤에 함수를 실행합니다.</td>
+</tr>
+<tr>
+<td>location</td>
+<td>현재 페이지의 URL 정보에 접근합니다.</td>
+</tr>
+<tr>
+<td>screen</td>
+<td>현재 브라우저 윈도우의 화면 정보에 접근합니다.</td>
+</tr>
+<tr>
+<td>history</td>
+<td>브라우저의 방문 기록 정보에 접근합니다.</td>
+</tr>
+</tbody>
+</table></div><style data-emotion="css hx9xpc">@media (max-width: 768px){.css-hx9xpc{padding:0 20px;}}</style><div class="css-hx9xpc e9h1z130"></div><style data-emotion="css 9w9jmx">.css-9w9jmx{display:grid;place-items:center;margin-top:auto;padding:50px 0;font-size:15px;text-align:center;line-height:1.5;}@media (max-width: 768px){.css-9w9jmx{font-size:13px;}}</style><footer class="css-9w9jmx eupgui70">Thank You for Visiting My Blog, Have a Good Day 😆<br/>© 2023 Developer JaeHyeon, Powered By Gatsby.</footer></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KSPX7FD2CX"></script><script>
+    window.GATSBY_GTAG_PLUGIN_GA_TRACKING_ID = (
+      'G-KSPX7FD2CX'
+    );
+    window.GATSBY_GTAG_PLUGIN_ANONYMIZE = true;
+
+    var options = {
+      send_page_view: false
+    };
+    if (true) {
+      options.anonymize_ip = true;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-KSPX7FD2CX', options);
+  </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/javascript/javascript230710/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-02cdfd346d7a6a3e39e4.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-5bc95d683e7ccf2b8fef.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-0068c660a3882c466a44.js\"],\"component---src-pages-info-tsx\":[\"/component---src-pages-info-tsx-d7c3b23b9ad045b91443.js\"],\"component---src-templates-post-template-tsx\":[\"/component---src-templates-post-template-tsx-5ce00f07c6886c4ec16d.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="32465993023e48454d64";</script><script src="/webpack-runtime-cddab2de0a21cdeda4a2.js" async></script><script src="/framework-0f04c156ca27bca6f35b.js" async></script><script src="/app-02cdfd346d7a6a3e39e4.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
