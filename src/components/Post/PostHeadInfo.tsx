@@ -52,6 +52,7 @@ const Title = styled.div`
   white-space: normal;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-family: 'Do Hyeon', sans-serif;
   font-size: 45px;
   font-weight: 800;
 
