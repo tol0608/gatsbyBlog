@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/tol0608">
-    <img alt="jaehyeon" src="static/ljh.jpeg" />
+    <img alt="jaehyeon" src="static/ljh.jpeg" width="30%"/>
   </a>
 </p>
 <h1 align="center">
