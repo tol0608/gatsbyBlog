@@ -1,16 +1,13 @@
-/* 배경색과 글꼴 색상을 설정합니다. */
 body.theme-dark {
-    background-color: #000; /* 검정 배경 */
-    color: #fff; /* 흰색 글꼴 */
+    background-color: rgb(15, 20, 32);
+    color: #eaedff;
 }
 
-/* 버튼 등의 요소의 스타일을 조절할 수 있습니다. */
 button.theme-dark {
-    background-color: #222; /* 다크 모드 버튼 배경색 */
-    color: #fff; /* 다크 모드 버튼 글꼴 색상 */
+    background-color: #222;
+    color: #eaedff;
 }
 
-/* 다른 요소에 대한 추가적인 스타일을 여기에 추가할 수 있습니다. */
 @media (max-width: 768px) {
     .themeToggle {
         display: none;

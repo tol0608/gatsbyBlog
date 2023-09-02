@@ -27,7 +27,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({ theme, toggleTheme }) => {
       style={buttonStyle}
       className={`themeToggle ${themeClassName}`}
     >
-      {theme === 'light' ? '다크 모드 🌙' : '라이트 모드 ☀'}
+      {theme === 'light' ? '다크 모드 🌙' : '라이트 모드 ☀️'}
     </button>
   )
 }
