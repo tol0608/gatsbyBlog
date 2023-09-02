@@ -1,10 +1,12 @@
-import React, { FunctionComponent } from 'react'
-import { graphql } from 'gatsby'
+import React, { FunctionComponent, useEffect } from 'react'
+import { graphql, Link } from 'gatsby'
 import { PostFrontmatterType } from 'types/PostItem.types'
 import Template from 'components/Common/Template'
 import PostHead from 'components/Post/PostHead'
 import PostContent from 'components/Post/PostContent'
 import CommentWidget from 'components/Post/CommentWidget'
+import useThemeToggle from '../hooks/useThemeToggle'
+import ThemeToggle from 'hooks/themeToggle'
 
 type PostTemplateProps = {
   data: {
@@ -46,8 +48,15 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
     },
   } = edges[0]
 
+  const { theme, toggleTheme } = useThemeToggle()
+
+  useEffect(() => {
+    document.body.className = `theme-${theme}`
+  }, [theme])
+
   return (
     <Template title={title} description={summary} url={href} image={publicURL}>
+      <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <PostHead
         title={title}
         date={date}
@@ -56,6 +65,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
       />
       <PostContent html={html} />
       <CommentWidget />
+      <Link to="/">Back to Home</Link>
     </Template>
   )
 }

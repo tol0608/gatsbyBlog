@@ -1,0 +1,15 @@
+body.theme-light {
+    background-color: #F2F2F2;
+    color: #0f1420;
+}
+
+button.theme-light {
+    background-color: #eee;
+    color: #0f1420;
+}
+
+@media (max-width: 768px) {
+    .themeToggle {
+        display: none;
+    }
+}

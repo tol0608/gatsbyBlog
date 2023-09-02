@@ -1,12 +1,17 @@
-import React, { FunctionComponent, useMemo } from 'react'
+import React, { FunctionComponent } from 'react'
+import { graphql } from 'gatsby'
+import useThemeToggle from '../hooks/useThemeToggle'
 import CategoryList from 'components/Main/CategoryList'
 import Introduction from 'components/Main/Introduction'
 import PostList from 'components/Main/PostList'
-import { graphql } from 'gatsby'
 import { PostListItemType } from 'types/PostItem.types'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import queryString, { ParsedQuery } from 'query-string'
 import Template from 'components/Common/Template'
+import ThemeToggle from 'hooks/themeToggle'
+
+import '../styles/lightMode.css'
+import '../styles/darkMode.css'
 
 type CategoryListProps = {
   selectedCategory: string
@@ -58,35 +63,33 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
     },
   },
 }) {
-  const parsed: ParsedQuery<string> = queryString.parse(search)
+  const { theme, toggleTheme } = useThemeToggle()
+
+  const parsed: ParsedQuery = queryString.parse(search)
   const selectedCategory: string =
     typeof parsed.category !== 'string' || !parsed.category
       ? 'All'
       : parsed.category
 
-  const categoryList = useMemo(
-    () =>
-      edges.reduce(
-        (
-          list: CategoryListProps['categoryList'],
-          {
-            node: {
-              frontmatter: { categories },
-            },
-          }: PostType,
-        ) => {
-          categories.forEach(category => {
-            if (list[category] === undefined) list[category] = 1
-            else list[category]++
-          })
-
-          list['All']++
-
-          return list
+  const categoryList = edges.reduce(
+    (
+      list: CategoryListProps['categoryList'],
+      {
+        node: {
+          frontmatter: { categories },
         },
-        { All: 0 },
-      ),
-    [],
+      }: PostType,
+    ) => {
+      categories.forEach(category => {
+        if (list[category] === undefined) list[category] = 1
+        else list[category]++
+      })
+
+      list['All']++
+
+      return list
+    },
+    { All: 0 },
   )
 
   return (
@@ -96,6 +99,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
       url={siteUrl}
       image={publicURL}
     >
+      <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <Introduction profileImage={gatsbyImageData} />
       <CategoryList
         selectedCategory={selectedCategory}

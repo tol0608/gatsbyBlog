@@ -10,3 +10,15 @@
 exports.onRenderBody = ({ setHtmlAttributes }) => {
   setHtmlAttributes({ lang: `en` })
 }
+
+const React = require('react')
+const ThemeToggle = require('./src/hooks/themeToggle')
+
+exports.wrapPageElement = ({ element }) => {
+  return (
+    <>
+      <ThemeToggle />
+      {element}
+    </>
+  )
+}
