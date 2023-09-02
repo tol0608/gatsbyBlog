@@ -1,0 +1,17 @@
+/* 배경색과 글꼴 색상을 설정합니다. */
+body.theme-light {
+    background-color: #fff; /* 흰색 배경 */
+    color: #000; /* 검정 글꼴 */
+}
+
+/* 버튼 등의 요소의 스타일을 조절할 수 있습니다. */
+button.theme-light {
+    background-color: #eee; /* 라이트 모드 버튼 배경색 */
+    color: #000; /* 라이트 모드 버튼 글꼴 색상 */
+}
+
+@media (max-width: 768px) {
+    .themeToggle {
+        display: none;
+    }
+}

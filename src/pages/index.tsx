@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useMemo } from 'react'
+import React, { FunctionComponent, useMemo, useEffect, useState } from 'react'
 import CategoryList from 'components/Main/CategoryList'
 import Introduction from 'components/Main/Introduction'
 import PostList from 'components/Main/PostList'
@@ -7,6 +7,10 @@ import { PostListItemType } from 'types/PostItem.types'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import queryString, { ParsedQuery } from 'query-string'
 import Template from 'components/Common/Template'
+import ThemeToggle from '../hooks/themeToggle'
+
+import '../styles/lightMode.css'
+import '../styles/darkMode.css'
 
 type CategoryListProps = {
   selectedCategory: string
@@ -58,6 +62,23 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
     },
   },
 }) {
+  const [theme, setTheme] = useState<'light' | 'dark'>('light')
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(newTheme)
+    localStorage.setItem('theme', newTheme)
+  }
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark'
+    if (savedTheme) {
+      setTheme(savedTheme)
+    }
+
+    document.body.className = `theme-${theme}`
+  }, [theme])
+
   const parsed: ParsedQuery<string> = queryString.parse(search)
   const selectedCategory: string =
     typeof parsed.category !== 'string' || !parsed.category
@@ -96,6 +117,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
       url={siteUrl}
       image={publicURL}
     >
+      <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <Introduction profileImage={gatsbyImageData} />
       <CategoryList
         selectedCategory={selectedCategory}
