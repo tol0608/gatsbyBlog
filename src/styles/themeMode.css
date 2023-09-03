@@ -1,0 +1,58 @@
+/* common */
+body.theme-dark {
+    background-color: #282740;
+    color: #eaedff;
+}
+
+button.theme-dark {
+    background-color: #222;
+    color: #eaedff;
+}
+
+body.theme-light {
+    background-color: #F2F2F2;
+    color: #0f1420;
+}
+
+button.theme-light {
+    background-color: #eee;
+    color: #0f1420;
+}
+
+.themeToggle {
+    z-index: 99;
+}
+
+@media (max-width: 320px) {
+    .themeToggle {
+        display: none;
+    }
+}
+
+/* introduction */
+.theme-dark .introBackground {
+    background: linear-gradient(90deg, #282740 0%, #0C0826 100%);
+    color: #dfdbff;
+}
+
+.theme-light .introBackground {
+    background: linear-gradient(90deg, #a59cff 0%, #b2b6ff 100%);
+    color: #130d3a;
+}
+
+/* postitem */
+.theme-dark .postItemThum {
+    box-shadow: 0 0 8px rgba(12, 8, 38, 0.53);
+}
+
+.theme-dark .postItemThum:hover {
+    box-shadow: 0 0 10px rgba(12, 8, 38, 1);
+}
+
+.theme-light .postItemThum {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.theme-light .postItemThum:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
