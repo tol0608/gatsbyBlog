@@ -10,8 +10,7 @@ import queryString, { ParsedQuery } from 'query-string'
 import Template from 'components/Common/Template'
 import ThemeToggle from 'hooks/themeToggle'
 
-import '../styles/lightMode.css'
-import '../styles/darkMode.css'
+import '../styles/themeMode.css'
 
 type CategoryListProps = {
   selectedCategory: string
