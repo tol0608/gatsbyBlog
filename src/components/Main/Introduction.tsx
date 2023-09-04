@@ -3,13 +3,14 @@ import styled from '@emotion/styled'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import ProfileImage from 'components/Main/ProfileImage'
 
+import '../../styles/themeMode.css'
+
 type IntroductionProps = {
   profileImage: IGatsbyImageData
 }
 
 const Background = styled.div`
   width: 100%;
-  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   color: #ffffff;
 `
 
@@ -21,7 +22,6 @@ const Wrapper = styled.div`
   width: 768px;
   height: 400px;
   margin: 0 auto;
-  color: #29323c;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -55,7 +55,7 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
   profileImage,
 }) {
   return (
-    <Background>
+    <Background className="introBackground">
       <Wrapper>
         <ProfileImage profileImage={profileImage} />
 

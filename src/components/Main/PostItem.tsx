@@ -4,21 +4,18 @@ import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { PostFrontmatterType } from 'types/PostItem.types'
 
+import '../../styles/themeMode.css'
+
 type PostItemProps = PostFrontmatterType & { link: string }
 
 const PostItemWrapper = styled(Link)`
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   transition: 0.3s box-shadow;
   cursor: pointer;
-  background-color: #eaf2ff;
+  background-color: #eaedff;
   color: #121212;
-
-  &:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
 `
 
 const ThumbnailImage = styled(GatsbyImage)`
@@ -94,7 +91,7 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
   link,
 }) {
   return (
-    <PostItemWrapper to={link}>
+    <PostItemWrapper to={link} className="postItemThum">
       <ThumbnailImage image={gatsbyImageData} alt="Post Item Image" />
 
       <PostItemContent>
