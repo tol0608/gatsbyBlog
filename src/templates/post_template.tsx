@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useEffect } from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import { PostFrontmatterType } from 'types/PostItem.types'
 import Template from 'components/Common/Template'
 import PostHead from 'components/Post/PostHead'
@@ -65,7 +65,6 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
       />
       <PostContent html={html} />
       <CommentWidget />
-      <Link to="/">Back to Home</Link>
     </Template>
   )
 }

@@ -51,6 +51,33 @@ const Title = styled.div`
   }
 `
 
+const AboutMe = styled.a`
+  display: inline-block;
+  background: #515373;
+  color: #ffffff;
+  margin-top: 15px;
+  padding: 5px 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  transform-origin: center;
+  animation: vibration 1.2s infinite;
+
+  @keyframes vibration {
+    0% {
+      transform: rotate(0deg);
+    }
+    40% {
+      transform: rotate(5deg);
+    }
+    60% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+`
+
 const Introduction: FunctionComponent<IntroductionProps> = function ({
   profileImage,
 }) {
@@ -63,6 +90,13 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
           <SubTitle>오늘도 앞으로</SubTitle>
           <Title>저는 Junior Frontend Developer 이재현 입니다.</Title>
         </div>
+        <AboutMe
+          href="https://tol0608.github.io/helloworld"
+          className="aboutMe"
+          target="_blank"
+        >
+          About Me 👋
+        </AboutMe>
       </Wrapper>
     </Background>
   )
