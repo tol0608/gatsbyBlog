@@ -8,6 +8,26 @@ import CommentWidget from 'components/Post/CommentWidget'
 import useThemeToggle from '../hooks/useThemeToggle'
 import ThemeToggle from 'hooks/themeToggle'
 
+import '../styles/toc.css'
+import '../styles/themeMode.css'
+
+type TableOfContentsProps = {
+  toc: string[]
+}
+export const TableOfContents: FunctionComponent<TableOfContentsProps> = ({
+  toc,
+}) => {
+  if (!toc || toc.length === 0) {
+    return null
+  }
+
+  return (
+    <div className="toc-container">
+      <div className="toc" dangerouslySetInnerHTML={{ __html: toc }} />
+    </div>
+  )
+}
+
 type PostTemplateProps = {
   data: {
     allMarkdownRemark: {
@@ -23,6 +43,7 @@ export type PostPageItemType = {
   node: {
     html: string
     frontmatter: PostFrontmatterType
+    tableOfContents?: string[]
   }
 }
 
@@ -45,6 +66,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
           publicURL,
         },
       },
+      tableOfContents = [],
     },
   } = edges[0]
 
@@ -63,6 +85,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
         categories={categories}
         thumbnail={gatsbyImageData}
       />
+      <TableOfContents toc={tableOfContents} />
       <PostContent html={html} />
       <CommentWidget />
     </Template>
@@ -77,6 +100,7 @@ export const queryMarkdownDataBySlug = graphql`
       edges {
         node {
           html
+          tableOfContents
           frontmatter {
             title
             summary

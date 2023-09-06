@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host:'https://tol0608.github.io/',
+        host: 'https://tol0608.github.io/',
         sitemap: 'https://tol0608.github.io/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
@@ -63,8 +63,8 @@ module.exports = {
           formats: ['auto', 'webp'],
           quality: 100,
           placeholder: 'blurred',
-        }
-      }
+        },
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
@@ -72,6 +72,17 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY:'100',
+              className: `custom-class`,
+              maintainCase: true,
+              removeAccents: true,
+              isIconAfterHeader: true,
+              elements: [`h1`, `h2`, `h3`, `h4`],
+            },
+          },
           {
             resolve: 'gatsby-remark-smartypants',
             options: {
@@ -105,5 +116,6 @@ module.exports = {
           },
         ],
       },
-    }],
+    },
+  ],
 }
