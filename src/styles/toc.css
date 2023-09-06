@@ -1,0 +1,28 @@
+.toc-container {
+    width: 15%;
+    min-width: 200px;
+    position: sticky;
+    top: 300px;
+    left: 85%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.toc {
+    font-size: 14px;
+    margin: 0 15px;
+    padding: 0;
+}
+
+.toc li::marker {
+    font-size: 0;
+}
+
+.toc a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.toc a:hover {
+    color: #d58d8d;
+}
