@@ -9,6 +9,7 @@ import { IGatsbyImageData } from 'gatsby-plugin-image'
 import queryString, { ParsedQuery } from 'query-string'
 import Template from 'components/Common/Template'
 import ThemeToggle from 'hooks/themeToggle'
+import TopButton from 'hooks/topButton'
 
 import '../styles/themeMode.css'
 
@@ -105,6 +106,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
         categoryList={categoryList}
       />
       <PostList selectedCategory={selectedCategory} posts={edges} />
+      <TopButton />
     </Template>
   )
 }
