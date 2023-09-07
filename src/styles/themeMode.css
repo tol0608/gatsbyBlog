@@ -68,3 +68,12 @@ button.theme-light {
     background-color: #0f1420;
     color: #eaedff;
 }
+
+/* top button */
+.theme-dark .tBtn {
+    background-color: #f5f5f5;
+}
+
+.theme-light .tBtn {
+    background-color: #0f1420;
+}
