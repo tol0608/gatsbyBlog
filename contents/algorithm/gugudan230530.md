@@ -1,7 +1,7 @@
 ---
 date: '2023-05-30'
 title: '구구단'
-categories: ['개발', 'JAVA', '알고리즘']
+categories: ['알고리즘']
 summary: 'Java로 구현한 구구단'
 thumbnail: '../thum/java.png'
 ---

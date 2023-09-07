@@ -1,7 +1,7 @@
 ---
 date: '2023-06-08'
 title: '프로그래밍 기초 9'
-categories: ['개발', '프로그래밍 기초', 'JAVA', '객체지향']
+categories: ['JAVA']
 summary: '참조형 매개변수, 재귀호출, 클래스 메서드와 인스턴스 메서드 등'
 thumbnail: '../thum/programing.png'
 ---

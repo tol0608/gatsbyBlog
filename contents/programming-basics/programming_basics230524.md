@@ -1,7 +1,7 @@
 ---
 date: '2023-05-24'
 title: '프로그래밍 기초 1'
-categories: ['개발', '프로그래밍 기초', 'JAVA']
+categories: ['JAVA']
 summary: '프로그래밍 언어 사용처, 아스키 코드표, 형변환, 캐스팅 등'
 thumbnail: '../thum/programing.png'
 ---

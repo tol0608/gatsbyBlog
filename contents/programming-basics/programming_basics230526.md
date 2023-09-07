@@ -1,7 +1,7 @@
 ---
 date: '2023-05-26'
 title: '프로그래밍 기초 3'
-categories: ['개발', '프로그래밍 기초', 'JAVA']
+categories: ['JAVA']
 summary: '조건문'
 thumbnail: '../thum/programing.png'
 ---

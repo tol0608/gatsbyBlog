@@ -1,7 +1,7 @@
 ---
 date: '2023-06-12'
 title: '프로그래밍 기초 11'
-categories: ['개발', '프로그래밍 기초', 'JAVA', '객체지향']
+categories: ['JAVA']
 summary: 'Package'
 thumbnail: '../thum/programing.png'
 ---

@@ -1,7 +1,7 @@
 ---
 date: '2023-05-25'
 title: '프로그래밍 기초 2'
-categories: ['개발', '프로그래밍 기초', 'JAVA']
+categories: ['JAVA']
 summary: '연산자 및 형변환'
 thumbnail: '../thum/programing.png'
 ---

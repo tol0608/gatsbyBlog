@@ -1,7 +1,7 @@
 ---
 date: '2023-07-07'
 title: '시간 함수, eval, 메서드'
-categories: ['웹개발', '프로그래밍 기초', 'JAVASCRIPT']
+categories: ['Front-End']
 summary: 'javascript'
 thumbnail: '../thum/javascript.png'
 ---

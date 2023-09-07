@@ -1,7 +1,7 @@
 ---
 date: '2023-06-01'
 title: '프로그래밍 기초 6'
-categories: ['개발', '프로그래밍 기초', 'JAVA']
+categories: ['JAVA']
 summary: '배열(Array)'
 thumbnail: '../thum/programing.png'
 ---
