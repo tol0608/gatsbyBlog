@@ -1,7 +1,7 @@
 ---
 date: '2023-07-13'
 title: '동적 컨텐츠 생성, DOM요소 접근 및 속성변경'
-categories: ['웹개발', '프로그래밍 기초', 'JAVASCRIPT', 'DOM']
+categories: ['Front-End']
 summary: 'javascript'
 thumbnail: '../thum/javascript.png'
 ---

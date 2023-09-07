@@ -1,7 +1,7 @@
 ---
 date: '2023-05-25'
 title: '월의 마지막일자 계산 프로그램'
-categories: ['개발', 'JAVA', '알고리즘']
+categories: ['알고리즘']
 summary: 'Java로 구현한 월의 마지막일자 계산 프로그램'
 thumbnail: '../thum/java.png'
 ---

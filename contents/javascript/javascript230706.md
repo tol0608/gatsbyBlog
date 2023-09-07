@@ -1,7 +1,7 @@
 ---
 date: '2023-07-06'
 title: '함수와 변수'
-categories: ['웹개발', '프로그래밍 기초', 'JAVASCRIPT']
+categories: ['Front-End']
 summary: 'javascript'
 thumbnail: '../thum/javascript.png'
 ---

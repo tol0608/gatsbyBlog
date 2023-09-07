@@ -7,10 +7,10 @@ import PostContent from 'components/Post/PostContent'
 import CommentWidget from 'components/Post/CommentWidget'
 import useThemeToggle from '../hooks/useThemeToggle'
 import ThemeToggle from 'hooks/themeToggle'
+import TopButton from 'hooks/topButton'
 
 import '../styles/toc.css'
 import '../styles/themeMode.css'
-import TopButton from 'hooks/topButton'
 
 type TableOfContentsProps = {
   toc: string[]
@@ -88,8 +88,8 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
       />
       <TableOfContents toc={tableOfContents} />
       <PostContent html={html} />
-      <CommentWidget />
       <TopButton />
+      <CommentWidget />
     </Template>
   )
 }

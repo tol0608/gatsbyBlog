@@ -1,7 +1,7 @@
 ---
 date: '2023-06-13'
 title: '프로그래밍 기초 12'
-categories: [ '개발', '프로그래밍 기초', 'JAVA', '객체지향' ]
+categories: ['JAVA']
 summary: 'Classpath, import 문, 제어자'
 thumbnail: '../thum/programing.png'
 ---

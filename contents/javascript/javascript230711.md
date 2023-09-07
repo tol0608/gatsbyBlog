@@ -1,7 +1,7 @@
 ---
 date: '2023-07-11'
 title: '이벤트와 이벤트 처리기'
-categories: ['웹개발', '프로그래밍 기초', 'JAVASCRIPT']
+categories: ['Front-End']
 summary: 'javascript'
 thumbnail: '../thum/javascript.png'
 ---

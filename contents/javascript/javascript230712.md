@@ -1,7 +1,7 @@
 ---
 date: '2023-07-12'
 title: 'DOM'
-categories: ['웹개발', '프로그래밍 기초', 'JAVASCRIPT', 'DOM']
+categories: ['Front-End']
 summary: 'javascript'
 thumbnail: '../thum/javascript.png'
 ---

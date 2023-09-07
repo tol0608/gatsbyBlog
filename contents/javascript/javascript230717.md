@@ -1,7 +1,7 @@
 ---
 date: '2023-07-17'
 title: '이벤트 버블링, 예외처리'
-categories: ['웹개발', '프로그래밍 기초', 'JAVASCRIPT']
+categories: ['Front-End']
 summary: 'javascript'
 thumbnail: '../thum/javascript.png'
 ---

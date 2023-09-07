@@ -1,7 +1,7 @@
 ---
 date: '2023-06-02'
 title: '프로그래밍 기초 7'
-categories: ['개발', '프로그래밍 기초', 'JAVA', '객체지향']
+categories: ['JAVA']
 summary: '객체지향의 시작'
 thumbnail: '../thum/programing.png'
 ---

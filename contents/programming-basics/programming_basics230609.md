@@ -1,7 +1,7 @@
 ---
 date: '2023-06-09'
 title: '프로그래밍 기초 10'
-categories: ['개발', '프로그래밍 기초', 'JAVA', '객체지향']
+categories: ['JAVA']
 summary: '상속, 오버라이딩'
 thumbnail: '../thum/programing.png'
 ---

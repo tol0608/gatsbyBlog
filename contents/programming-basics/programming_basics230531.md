@@ -1,7 +1,7 @@
 ---
 date: '2023-05-31'
 title: '프로그래밍 기초 5'
-categories: ['개발', '프로그래밍 기초', 'JAVA']
+categories: ['JAVA']
 summary: 'Break문과 Continue문'
 thumbnail: '../thum/programing.png'
 ---

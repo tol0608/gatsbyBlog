@@ -1,7 +1,7 @@
 ---
 date: '2023-07-04'
 title: '고급언어란'
-categories: ['웹개발', '프로그래밍 기초', 'JAVASCRIPT']
+categories: ['Front-End']
 summary: 'javascript'
 thumbnail: '../thum/javascript.png'
 ---
