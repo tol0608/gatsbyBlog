@@ -1,5 +1,5 @@
 ---
-date: '2023-09-08'
+date: '2023-09-07'
 title: 'TopButton 구현'
 categories: ['블로그']
 summary: '제이쿼리 코드를 타입스크립트의 함수형 컴포넌트로!'
