@@ -1,7 +1,7 @@
 .toc-container {
     width: 15%;
     min-width: 200px;
-    position: sticky;
+    position: fixed;
     top: 300px;
     left: 85%;
     padding: 10px;
@@ -10,7 +10,7 @@
 
 .toc {
     font-size: 14px;
-    margin: 0 15px;
+    margin: 10px;
     padding: 0;
 }
 
